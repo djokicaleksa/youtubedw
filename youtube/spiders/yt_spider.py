@@ -8,7 +8,7 @@ class YouTubeSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-	    "https://www.youtube.com/watch?v=Fek5f1laY5M"
+	    "https://www.youtube.com/watch?v=AjwP4dkxi30"
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
